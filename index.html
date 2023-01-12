@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">        <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <title>Welcome</title>
+    </head>
+    <body onload="loadSwitches()">
+        <h1>
+            <time id="time"></time>
+            <span id="am_pm"></span>
+        </h1>
+        <h1>
+            <span id="greeting"></span>
+            <span id="name" contenteditable="true"></span>
+        </h1>
+
+        <h2>What Is Your Focus For Today?</h2>
+        <h2 id="focus" contenteditable="true"></h2>
+
+        <fieldset id="switch_hub">
+            <label class="switch">
+                <input type="checkbox" id="1" onclick="toggleAmPm()">
+                <span class="slider round"></span>
+            </label>
+            <br><br>
+            <label class="switch">
+                <input type="checkbox" id="2" onclick="toggleMilitary()">
+                <span class="slider round"></span>
+            </label>
+        </fieldset>
+        <fieldset id="switch_captions">
+            <caption id="caption1"> am/pm </caption>
+            <br><br>
+            <caption id="caption2">military</caption>
+        </fieldset> 
+
+        <script src="js/main.js"></script>
+    </body>
+</html>                                                                                                                                         
